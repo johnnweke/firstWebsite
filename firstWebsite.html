@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!--Bootstrap Link-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+     <!--Animate.css Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+     <!--Local Stylesheet Link-->
+    <link rel="stylesheet" href="./firstWebsiteStyle.css" type="text/css" />
+    
+</head>
+    <title>Alexis Rose's Website.</title>
+  </head>
+
+  <body>
+    <!-- create title/h1 with your celebrity name and id of yourcelebritylastnameTitle (example: roseTitle) -->
+    <h1 id='roseTitle' class="fadeInUp">Alexis Rose</h1>
+    <!--Animated Element above-->
+
+    <div><button class="centerClass" id="triviaButton">Play Trivia</button></div>
+
+    <!-- create image tag with id yourcelebritylastnamePic (example: rosePic) and appropriate source attribute for image display -->
+    <img id="rosePic"  src="https://www.cbc.ca/schittscreek/content/images/people/alexis-s5.jpg" alt="Alexis Rose Picture">
+
+   <!-- <iframe
+      id="roseVideo"
+      width="560" height="315" src="https://www.youtube.com/watch?v=Lrvv04XW5Iw" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe> -->
+
+    <iframe id="roseVideo" width="560" height="315" src="https://www.youtube.com/embed/Lrvv04XW5Iw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- create button and center element with centerClass style you will define in css file, with id of video button -->
+
+    <div> <button class='centerClass' id="roseVideo">Click Me!</button></div> 
+
+    <!-- create h4 link to wikipedia page of your celebrity with id of link (remember nesting!!) -->
+    <h4 id="roseTitle">
+        <a href="https://schitts-creek.fandom.com/wiki/Alexis_Rose">Alexis Rose: Filmography</a>
+    </h4>
+
+    <!-- use table, table row, table head, and table data tags to create table with two hard coded movie examples. -->
+    
+  <!-- Parent table tag must have id of movieTable.  There should be two columns, the first column should be movie title -->
+  <table id="movieTable">
+      <thead>
+        <tr>
+            <th colspan="1">Movie Title</th>
+            <th colspan="1">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Blue_Mountain_State" alt="Blue Mountain State Wikipedia">Blue Mountain State</a>
+            </td>
+            <td>2010</td>
+        </tr>
+          <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Rookie_Blue" alt="Rookie Blue Wikipedia">Rookie Blue</a>
+            </td>
+            <td>2012</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Schitt%27s_Creek" alt="Schitt's Creek Wikipedia">Schitt's Creek</a>
+            </td>
+            <td>2015</td>
+        </tr>
+      </tbody>
+  <!-- The second column should be year.  Please provide two hard-coded movie examples that display right when site is loaded -->
+</table>
+    <!-- create input centered using centerClass style you will define in css file, with id of titleInput and a placeholder of title -->
+
+    <input type="text" class="centerClass" id='titleInput' placeholder="Title">
+
+    <!-- create input centered using centerClass style you will define in css file, with id of yearInput and a placeholder of year -->
+    <input type="number" class="centerClass" id='yearInput' placeholder="Year">
+
+    <!-- create button centered using centerClass style you will define in css file, with id of tableButton -->
+    <button class="centerClass" id="tableButton"></button>
+
+    <!-- create input in h3, both tags must have class of date and input must display date picker -->
+
+    <!--The type='datetime' function didn't work! Only the Type="month" worked for a drop down selectable date!-->
+<h3 class="date">
+    <input type="month" class="date" min="1000-03" value="2019-02">
+</h3>
+
+    <!-- Create footer tag that contains two paragraph tags. The first paragraph tag will say "Posted by: Your
+    Name" The second paragraph tag will say "Contact Information:" and contain an anchor tag with href set to
+    mail to your email. The anchor/hyperlink text displayed should be your email address. A google search
+    should reveal the exact format. Make sure to test the email functionality to make sure it works! -->
+
+<footer>
+        <p class="footer">
+                Posted by: John Nweke
+                </p>
+                <p class="footer">
+                Contact Information:   <a href="mailto:accesscj@gmail.com">accesscj at gmail dot com</a>
+                </p>
+</footer>
+
+  </body>
+  <script>
+//$("#button").click(function() {
+//$('.transform').toggleClass('transform-active');
+//}); 
+  </script>
+</html>
